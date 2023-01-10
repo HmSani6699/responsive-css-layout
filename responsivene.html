@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Css Responsive</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            row-gap: 10px;
+            column-gap: 10px;
+            text-align: center;
+        }
+
+        .box button {
+            color: white;
+            background-color: coral;
+            padding: 1em;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .box {
+            border: 2px solid lightcoral;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        @media screen and (max-width:575px) {
+            .box {
+                background-color: aqua;
+            }
+
+            .container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        @media screen and (min-width:576px) and (max-width:767px) {
+            .box {
+                background-color: lightgreen;
+            }
+
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media screen and (min-width:768px) and (max-width:992px) {
+            .box {
+                background-color: darkorchid;
+                color: white;
+            }
+
+            .container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Box number -1</h1>
+            <p>Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Esse
+                voluptas animi voluptatibus
+                voluptates facilis est, eligendi
+                odit ut veniam consequuntur
+                dolorum repellat molestiae, ipsum
+                impedit sequi. Consectetur non
+                ducimus mollitia.</p>
+            <button>submit</button>
+        </div>
+        <div class="box">
+            <h1>Box number -2</h1>
+            <p>Quo fugit facere velit mollitia
+                voluptatibus a libero maxime, ut
+                beatae nobis corporis in tenetur
+                aperiam. Magni quae hic alias quis
+                tenetur ullam, molestiae
+                voluptatibus odio, deserunt est
+                fuga ratione.</p>
+            <button>submit</button>
+        </div>
+        <div class="box">
+            <h1>Box number -3</h1>
+            <p>Fuga animi earum accusantium
+                molestias maiores molestiae libero
+                doloremque exercitationem
+                aspernatur nemo tempore voluptatem
+                dolore architecto ipsum officiis
+                repellendus, provident totam
+                temporibus ratione blanditiis!
+                Quam quae recusandae doloribus
+                consequatur expedita!</p>
+            <button>submit</button>
+        </div>
+        <div class="box">
+            <h1>Box number -4</h1>
+            <p>Quis omnis est voluptatum quasi aut
+                dignissimos necessitatibus in
+                culpa debitis asperiores natus,
+                fuga delectus obcaecati rerum
+                ipsum. Doloremque consectetur
+                reprehenderit, voluptas eveniet
+                cupiditate nesciunt atque tempore
+                qui sequi tenetur?</p>
+            <button>submit</button>
+        </div>
+        <div class="box">
+            <h1>Box number -5</h1>
+            <p>Dolore, amet totam, voluptas nam
+                nemo quae unde laborum distinctio
+                culpa esse rem sunt dolorum
+                repellendus temporibus rerum.
+                Itaque atque accusantium labore
+                laborum sed nostrum temporibus!
+                Distinctio saepe dolorum odit?</p>
+            <button>submit</button>
+        </div>
+        <div class="box">
+            <h1>Box number -6</h1>
+            <p>Qui pariatur consequuntur sed
+                ducimus minus deleniti omnis
+                nostrum, odit soluta beatae
+                aliquid. Reprehenderit quasi, et
+                quidem minima, enim architecto
+                assumenda commodi ratione
+                voluptatem ipsam eos in labore,
+                maxime eaque?</p>
+            <button>submit</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
